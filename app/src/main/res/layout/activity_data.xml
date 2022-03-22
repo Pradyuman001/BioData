@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".Data">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,7 +29,35 @@
                 android:textSize="25dp"
                 android:textColor="#000"
                 android:fontFamily="sans-serif-condensed-medium"
-                android:background="#E8E6E6"/>
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E8E6E6"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Details :-"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textStyle="italic"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -36,15 +68,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Surname :-"
+                    android:text="Fullname "
                     android:textSize="15dp"
                     android:textColor="#000"/>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="25dp"/>
+
+
                 <EditText
-                    android:id="@+id/surname_edt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter Surname"/>
+                    android:id="@+id/fullname_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Full Name"
+                    android:layout_marginLeft="15dp"
+                    android:maxLines="@integer/material_motion_duration_long_1"
+                    android:inputType="textCapWords"/>
 
             </LinearLayout>
 
@@ -57,99 +102,27 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Name :-"
+                    android:text="Date Of Birth"
                     android:textSize="15dp"
                     android:textColor="#000"/>
-
-                <EditText
-                    android:id="@+id/name_edt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter Name"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Father Name :-"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
                     android:textSize="15dp"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:layout_marginLeft="6dp"/>
 
-                <EditText
-                    android:id="@+id/fname_edt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter Father Name"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Mother Name :-"
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <EditText
-                    android:id="@+id/mothername_edt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter Mother Name"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Brother/Sister Name :-"
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <EditText
-                    android:id="@+id/bsname_edt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter Brother/Sister Name"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Date Of Birth :-"
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
 
                 <EditText
                     android:id="@+id/dob_edt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Date Of Birth"/>
+                android:hint="Enter Name"
+                    android:inputType="date"
+                    android:layout_marginLeft="14dp"/>
 
             </LinearLayout>
 
@@ -162,15 +135,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Place Of Birth :-"
+                    android:text="Place Of Birth"
                     android:textSize="15dp"
                     android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="1dp"/>
+
 
                 <EditText
                     android:id="@+id/birth_edt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Place Of Birth"/>
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Place Of Birth"
+                    android:layout_marginLeft="13dp"
+                    android:maxLines="@integer/material_motion_duration_long_1"
+                    android:inputType="textCapWords"/>
 
             </LinearLayout>
 
@@ -183,15 +169,653 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Education :-"
+                    android:text="Education"
                     android:textSize="15dp"
                     android:textColor="#000"/>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="24dp"/>
+
+
                 <EditText
                     android:id="@+id/edu_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Education"
+                    android:layout_marginLeft="14dp"
+                    android:maxLines="@integer/material_motion_duration_long_1"
+                    android:inputType="textCapWords"/>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Education"/>
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Email"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="52dp"/>
+
+
+                <EditText
+                    android:id="@+id/email_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Email"
+                    android:layout_marginLeft="16dp"
+                    android:maxLines="@integer/material_motion_duration_long_1"
+                    android:inputType="textEmailAddress"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Height"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="45dp"/>
+
+
+                <EditText
+                    android:id="@+id/height_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Height"
+                    android:inputType="numberDecimal"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Mobile No."
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="18dp"/>
+
+
+                <EditText
+                    android:id="@+id/num_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Mobile Number"
+                    android:inputType="number"
+                    android:layout_marginLeft="13dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Blood Group"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="6dp"/>
+
+
+                <EditText
+                    android:id="@+id/blood_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Blood Group"
+                    android:layout_marginLeft="14dp"
+                    android:maxLines="@integer/material_motion_duration_long_1"
+                    android:inputType="textCapWords"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Gender"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:paddingTop="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="40dp"/>
+
+
+                <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male_rd_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:layout_marginLeft="14dp"/>
+
+                <RadioButton
+                    android:id="@+id/female_rd_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:layout_marginLeft="14dp"/>
+
+            </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Hobby"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="44dp"/>
+
+
+                <CheckBox
+                    android:id="@+id/read_chk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reading"
+                    android:layout_marginLeft="14dp"/>
+
+                <CheckBox
+                    android:id="@+id/music_chk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Music"
+                    android:layout_marginLeft="5dp"/>
+
+                <CheckBox
+                    android:id="@+id/dance_chk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dancing"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Age"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="61dp"/>
+
+                <TextView
+                    android:id="@+id/age1_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <SeekBar
+                    android:id="@+id/age_seek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Family Details :-"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textStyle="italic"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Father Name"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"/>
+
+
+                <EditText
+                    android:id="@+id/fname_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Father Name"
+                    android:layout_marginLeft="14dp"
+                    android:maxLines="@integer/material_motion_duration_long_1"
+                    android:inputType="textCapWords"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Occupation"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
+
+
+                <EditText
+                    android:id="@+id/occ_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Father's Occupation"
+                    android:layout_marginLeft="14dp"
+                    android:maxLines="@integer/material_motion_duration_long_1"
+                    android:inputType="textCapWords"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Address"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="35dp"/>
+
+
+                <EditText
+                    android:id="@+id/add_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Address"
+                    android:layout_marginLeft="15dp"
+                    android:maxLines="3"
+                    android:inputType="textCapWords"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Mobile No."
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="20dp"/>
+
+
+                <EditText
+                    android:id="@+id/fnum_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Father's Mobile No."
+                    android:inputType="number"
+                    android:layout_marginLeft="14dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Mother Name"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=":"
+                    android:textColor="#000"
+                    android:textSize="15dp" />
+
+
+                <EditText
+                    android:id="@+id/mothername_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Mother Name"
+                    android:layout_marginLeft="11dp"
+                    android:maxLines="@integer/material_motion_duration_long_1"
+                    android:inputType="textCapWords"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Brother Name"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"/>
+
+
+                <EditText
+                    android:id="@+id/brothername_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Brother Name"
+                    android:layout_marginLeft="8dp"
+                    android:maxLines="@integer/material_motion_duration_long_1"
+                    android:inputType="textCapWords"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Sister Name"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
+
+
+                <EditText
+                    android:id="@+id/sistername_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Sister Name"
+                    android:layout_marginLeft="11dp"
+                    android:maxLines="@integer/material_motion_duration_long_1"
+                    android:inputType="textCapWords"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Village Name"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="10dp"/>
+
+
+                <EditText
+                    android:id="@+id/village_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Village Name"
+                    android:layout_marginLeft="9dp"
+                    android:maxLines="@integer/material_motion_duration_long_1"
+                    android:inputType="textCapWords"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Taluka Name"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="9dp"/>
+
+
+                <EditText
+                    android:id="@+id/taluka_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Taluka Name"
+                    android:layout_marginLeft="9dp"
+                    android:maxLines="@integer/material_motion_duration_long_1"
+                    android:inputType="textCapWords"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="District Name"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="14dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="7dp"/>
+
+
+                <EditText
+                    android:id="@+id/district_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your District Name"
+                    android:layout_marginLeft="7dp"
+                    android:maxLines="@integer/material_motion_duration_long_1"
+                    android:inputType="textCapWords"/>
 
             </LinearLayout>
 
@@ -211,10 +835,12 @@
                     android:textSize="15dp"
                     android:backgroundTint="#E8E6E6"/>
 
+             </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

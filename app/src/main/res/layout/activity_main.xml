@@ -12,14 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,157 +29,56 @@
             android:textSize="25dp"
             android:textColor="#000"
             android:fontFamily="sans-serif-condensed-medium"
-            android:background="#E8E6E6"/>
+            android:textStyle="bold"/>
 
     </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E8E6E6"/>
+
+        </LinearLayout>
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp">
+        android:paddingTop="10dp"
+        android:gravity="center">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="110dp"
             android:layout_height="121dp"
-            android:src="@drawable/profile" />
+            android:src="@drawable/profile"/>
+
+    </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="15dp"
+            android:layout_gravity="left">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Surname :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:id="@+id/surname_txt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
+                    android:text="Personal Details :-"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textStyle="italic"/>
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:id="@+id/name_txt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Father Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:id="@+id/fname_txt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Mother Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:id="@+id/mothername_txt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Brother/Sister Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:id="@+id/bsname_txt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <View
-                android:layout_width="370dp"
-                android:layout_height="2dp"
-                android:layout_marginTop="6dp"
-                android:background="#E8E6E6" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -194,9 +89,54 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Date Of Birth :- "
+                    android:text="Full Name "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="26dp"/>
+
+                <TextView
+                    android:id="@+id/fullname_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Date Of Birth"
                     android:textSize="15dp"
                     android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="14dp"/>
+
 
                 <TextView
                     android:id="@+id/dob_txt"
@@ -204,9 +144,21 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:textSize="15dp"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -216,9 +168,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Place Of Birth :- "
+                    android:text="Place Of Birth"
                     android:textSize="15dp"
                     android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="8dp"/>
 
                 <TextView
                     android:id="@+id/birth_txt"
@@ -226,7 +187,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:textSize="15dp"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
 
@@ -238,9 +200,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Education :- "
+                    android:text="Education"
                     android:textSize="15dp"
                     android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="30dp"/>
 
                 <TextView
                     android:id="@+id/edu_txt"
@@ -248,7 +219,106 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:textSize="15dp"
-                    android:textColor="#000" />
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Height "
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="47dp"/>
+
+
+                <TextView
+                    android:id="@+id/height_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Mobile No. "
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="22dp"/>
+
+
+                <TextView
+                    android:id="@+id/num_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Blood Group"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
+
+
+                <TextView
+                    android:id="@+id/blood_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
 
@@ -273,18 +343,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="First Name :- "
+                    android:text="Gender "
                     android:textSize="15dp"
                     android:textColor="#000"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Patel"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
                     android:textSize="15dp"
                     android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
+                    android:layout_marginLeft="43dp"/>
+
+
+                <TextView
+                    android:id="@+id/gender_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
 
@@ -296,15 +376,43 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Middle Name :- "
+                    android:text="Hobby "
                     android:textSize="15dp"
                     android:textColor="#000"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="46dp"/>
+
+                <TextView
+                    android:id="@+id/h1_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Rahul"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/h2_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"/>
+
+
+                <TextView
+                    android:id="@+id/h3_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
                     android:textSize="15dp"
                     android:textColor="#000"
                     android:layout_marginLeft="5dp"/>
@@ -319,136 +427,80 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Last Name :- "
+                    android:text="Age"
                     android:textSize="15dp"
                     android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rameshbhai"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="First Name :- "
+                    android:text=" : "
                     android:textSize="15dp"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:layout_marginLeft="65dp"/>
+
 
                 <TextView
+                    android:id="@+id/age_txt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Patel"
                     android:textSize="15dp"
                     android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
+                    android:layout_marginLeft="15dp"/>
 
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Family Details :-"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textStyle="italic"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Middle Name :- "
+                    android:text="Father Name "
                     android:textSize="15dp"
                     android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rahul"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="5dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Last Name :- "
+                    android:text=" : "
                     android:textSize="15dp"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:layout_marginLeft="10dp"/>
+
 
                 <TextView
+                    android:id="@+id/fname_txt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Rameshbhai"
                     android:textSize="15dp"
                     android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="First Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Patel"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
 
@@ -460,18 +512,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Middle Name :- "
+                    android:text="Occupation"
                     android:textSize="15dp"
                     android:textColor="#000"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rahul"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
                     android:textSize="15dp"
                     android:textColor="#000"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="22dp"/>
+
+
+                <TextView
+                    android:id="@+id/occ_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
 
@@ -483,54 +545,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Last Name :- "
+                    android:text="Address"
                     android:textSize="15dp"
                     android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rameshbhai"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="First Name :- "
+                    android:text=" : "
                     android:textSize="15dp"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:layout_marginLeft="41dp"/>
+
 
                 <TextView
+                    android:id="@+id/add_txt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Patel"
                     android:textSize="15dp"
                     android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
 
@@ -542,18 +578,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Middle Name :- "
+                    android:text="Mobile No."
                     android:textSize="15dp"
                     android:textColor="#000"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rahul"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
                     android:textSize="15dp"
                     android:textColor="#000"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="26dp"/>
+
+
+                <TextView
+                    android:id="@+id/fnum_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
 
@@ -565,54 +611,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Last Name :- "
+                    android:text="Mother Name"
                     android:textSize="15dp"
                     android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rameshbhai"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="First Name :- "
+                    android:text=" : "
                     android:textSize="15dp"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:layout_marginLeft="10dp"/>
+
 
                 <TextView
+                    android:id="@+id/mothername_txt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Patel"
                     android:textSize="15dp"
                     android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
 
@@ -624,18 +644,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Middle Name :- "
+                    android:text="Brother Name"
                     android:textSize="15dp"
                     android:textColor="#000"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rahul"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
                     android:textSize="15dp"
                     android:textColor="#000"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="8dp"/>
+
+
+                <TextView
+                    android:id="@+id/brothername_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
 
@@ -647,54 +677,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Last Name :- "
+                    android:text="Sister Name"
                     android:textSize="15dp"
                     android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rameshbhai"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="First Name :- "
+                    android:text=" : "
                     android:textSize="15dp"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:layout_marginLeft="17dp"/>
+
 
                 <TextView
+                    android:id="@+id/sistername_txt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Patel"
                     android:textSize="15dp"
                     android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
 
@@ -706,18 +710,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Middle Name :- "
+                    android:text="Village Name"
                     android:textSize="15dp"
                     android:textColor="#000"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rahul"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" : "
                     android:textSize="15dp"
                     android:textColor="#000"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="11dp"/>
+
+
+                <TextView
+                    android:id="@+id/village_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
 
@@ -729,54 +743,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Last Name :- "
+                    android:text="Taluka Name"
                     android:textSize="15dp"
                     android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rameshbhai"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="First Name :- "
+                    android:text=" : "
                     android:textSize="15dp"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:layout_marginLeft="12dp"/>
+
 
                 <TextView
+                    android:id="@+id/taluka_txt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Patel"
                     android:textSize="15dp"
                     android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
 
@@ -788,369 +776,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Middle Name :- "
+                    android:text="District Name"
                     android:textSize="15dp"
                     android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rahul"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="5dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="Last Name :- "
+                    android:text=" : "
                     android:textSize="15dp"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:layout_marginLeft="9dp"/>
+
 
                 <TextView
+                    android:id="@+id/district_txt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Rameshbhai"
                     android:textSize="15dp"
                     android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="First Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Patel"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Middle Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rahul"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="5dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Last Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rameshbhai"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="First Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Patel"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Middle Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rahul"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="5dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Last Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rameshbhai"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="First Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Patel"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Middle Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rahul"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="5dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Last Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rameshbhai"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="First Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Patel"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Middle Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rahul"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="5dp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed"
-                    android:text="Last Name :- "
-                    android:textSize="15dp"
-                    android:textColor="#000"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Rameshbhai"
-                    android:textSize="15dp"
-                    android:textColor="#000"
-                    android:layout_marginLeft="18dp"/>
+                    android:layout_marginLeft="15dp"/>
 
             </LinearLayout>
 
