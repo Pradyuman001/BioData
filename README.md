@@ -56,6 +56,3 @@ Basic C Language, Basic C++ , Core JAVA , Advance Android
 ## Support
 
 For support, email pradyumangodhani007@gmail.com
-![photo_2022-06-18_13-33-57](https://user-images.githubusercontent.com/101545076/174428830-67720aab-9095-4744-bda2-9ae9b88afa24.jpg)
-![photo_2022-06-18_13-33-53](https://user-images.githubusercontent.com/101545076/174428836-816f7dbf-7ffb-48dc-af16-d3e560779877.jpg)
-![photo_2022-06-18_13-33-45](https://user-images.githubusercontent.com/101545076/174428855-ffbc074b-4c94-409d-8606-c008d8858c70.jpg)
